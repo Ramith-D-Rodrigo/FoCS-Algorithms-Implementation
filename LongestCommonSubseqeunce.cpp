@@ -37,7 +37,12 @@ int LCS(string s, string t){
 }
 
 int main(){
-    system("clear");
-    int k = LCS("My Name is Ramith", "Hi Ramith");
-    cout<<k<<endl;
+    string s1, s2;
+    cout<<"Enter the long string: ";
+    getline(cin, s1);
+    cout<<"Enter the short string: ";
+    getline(cin, s2);
+
+    int k = LCS(s1, s2);
+    cout<<"Longest substring is: "<<k<<endl;
 }
